@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+    
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:hsl(244, 38%, 16%);
+    height: 350px;
+    border-radius:8px;
+}
+
+.content-text {
+    padding: 50px;  
+     
+}
+
+
+.content-text h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    font-size:35px;      
+}
+
+.content-text h1 span {
+    color: hsl(277, 64%, 61%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size:35px;
+}
+
+.content-text p {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Inter', sans-serif;  
+    font-weight: 400;   
+    margin-top: 25px;  
+    font-size:13px;
+    letter-spacing: 0.7px;
+    
+}
+
+.content-text ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-right:15px;   
+    
+}
+
+.content-text ul li {
+    margin-top:20px;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Inter', sans-serif;  
+    font-weight: 400;  
+    font-size:10px;  
+    margin-right: 50px;
+    letter-spacing: 1px; 
+    
+}
+
+.content-text ul li .number {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    font-size:20px;
+    letter-spacing:normal;  
+    
+    
+}
+
+.content-text ul li .text {
+    display: block;
+    margin-top:5px;
+}
+
+.content-photo img {
+    height: 350px;
+    margin-left: 40px;
+    border-top-right-radius:8px;
+    border-bottom-right-radius: 8px;
+    filter: opacity(0.4) drop-shadow(0 0 0 rgb(205, 3, 255)); 
+    
+}
+
+@media (min-width:1862px) {
+    .content {
+        height: 400px;
+    }
+
+    .content-text h1 {
+        font-size:33px;
+    }
+
+    .content-text h1 span {
+        font-size:33px;
+    }
+
+    .content-text p {
+        margin-top: 30px;
+        font-size:15px;
+    }
+
+    .content-text ul {
+        margin-top: 30px;
+    }
+
+    .content-photo img {
+        height: 400px;
+    }
+
+}
+
+@media (min-width:1236px) and (max-width:1862px){
+    .content {
+        height: 400px;
+        
+    }
+
+    .content-text {
+        width: 400px;
+        
+        
+    }
+    .content-text h1 {
+        font-size: 30px;
+        padding:5px;
+        margin-left:10px;
+        
+    }
+
+    .content-text p {
+        display:inline-block;
+        font-size:14px;
+        line-height: 17px;
+        margin-left:10px;
+        margin-top:30px;
+    }
+
+    .content-text h1 span {
+        font-size: 30px;
+        padding:5px;
+        
+        
+    }
+
+    .content-text ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        
+    }
+  
+    .content-photo img {
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media (max-width:1236px) {
+    
+    .content {
+        flex-direction: column;
+        height: 800px;
+    }
+
+    .content-text {
+        height: 500px;
+        width: 400px;
+        position: absolute;
+        bottom:0;
+        text-align: center;
+    }
+
+    .content-text h1 {
+        font-size:27px;
+    }
+
+    .content-text h1 span {
+        font-size:27px;
+    }
+
+    .content-text p {      
+        font-size:18px;
+        font-weight: 100;
+    }
+
+    .content-photo {
+        width: 400px;
+    }
+
+    .content-photo img {
+        width: 400px;
+        height: 300px;
+        margin:0px;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        position: absolute;
+        top:0;
+    }
+
+    .content-text ul {
+        display: block;
+        text-align: center;
+        margin: 0px;
+        
+    }
+
+    .content-text ul li {
+        margin: 0px;
+    }
+
+    .content-text ul li .number {
+        font-size: 25px;
+    }
+
+    .content-text ul li .text {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .content-text ul li:nth-child(2) {
+        margin-top:15px;
+        margin-bottom:15px;
+        
+        
+    }
+
+
+}
